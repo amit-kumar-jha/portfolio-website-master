@@ -19,8 +19,3 @@ I am Amit, a passionate frontend developer with 2.5 years of experience in build
 ## Contact Me
 
 Feel free to reach out to me via email at [amitjha167@gmail.com] or connect with me on [LinkedIn](https://www.linkedin.com/in/amit-kumar-jha-00405a185/).
-
-## Setup
-
-1. Add RESEND_API_KEY environment variable in .env.local
-2. In the send-email.ts action file, change the "to" email to your own email
