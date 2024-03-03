@@ -19,30 +19,24 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        As a <span className="font-medium">frontend developer</span>, I am
+        driven by a deep passion for creating immersive and intuitive digital
+        experiences. With 2.5 years of hands-on experience, I have honed my
+        skills in crafting visually stunning and highly functional websites and
+        applications. My journey in web development has been marked by a
+        relentless pursuit of excellence, coupled with a commitment to staying
+        updated with the latest industry trends and technologies. I thrive in
+        collaborative environments, where I can leverage my expertise in{" "}
+        <span className="font-medium">React.js</span> and{" "}
+        <span className="font-medium">Next.js</span> to bring creative ideas to
+        life. A strong believer in the power of clean code and responsive
+        design, I prioritize user experience above all else. My approach is
+        characterized by meticulous attention to detail and a constant drive for
+        improvement. Outside of coding, I enjoy exploring new design trends,
+        experimenting with innovative techniques, and contributing to
+        open-source projects. As I continue to grow and evolve in this dynamic
+        field, I am eager to tackle new challenges and make meaningful
+        contributions to the ever-changing landscape of frontend development.{" "}
       </p>
     </motion.section>
   );

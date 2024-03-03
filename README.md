@@ -1,28 +1,24 @@
-[![Watch tutorial here](https://img.youtube.com/vi/sUKptmUVIBM/0.jpg)](https://youtu.be/sUKptmUVIBM)
+# Amit's Portfolio
 
-# [Watch video here](https://youtu.be/sUKptmUVIBM)
+Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a frontend developer.
 
-## What you will learn
+## About Me
 
-- Latest Next.js 13 features
-- Next.js App Router
-- Next.js Server Actions
-- Client & Server Components
-- TypeScript (Beginner & Intermediate)
-- Tailwind CSS
-- Context API
-- Advanced Animations with Framer Motion
-- React.Email & Resend
-- Custom React hooks
-- Fresh, modern UI design
-- Light & Dark mode
-- Responsive website
+I am Amit, a passionate frontend developer with 2.5 years of experience in building interactive and user-friendly websites and applications. My expertise lies in leveraging modern technologies such as React.js and Next.js to create dynamic and responsive user interfaces.
 
-## Important
+## Skills
 
-If you want to be a professional developer, you have to know the fundamentals like JavaScript and CSS really well. I highly recommend you go through my [Professional JavaScript](https://bytegrad.com/courses/professional-javascript) and [Professional CSS](https://bytegrad.com/courses/professional-css) courses.
+- Proficient in HTML5, CSS3, JavaScript
+- Experienced with React.js and Next.js
+- Knowledgeable in UI/UX design principles
+- Familiar with version control using Git
+- Skilled in responsive web design
+- Experience with testing frameworks such as Jest
+- Familiarity with RESTful APIs
 
-I'm close to releasing a complete React & Next.js course. Get on the email list to receive early-bird pricing: [link](https://email.bytegrad.com/).
+## Contact Me
+
+Feel free to reach out to me via email at [amitjha167@gmail.com] or connect with me on [LinkedIn](https://www.linkedin.com/in/amit-kumar-jha-00405a185/).
 
 ## Setup
 
