@@ -5,6 +5,27 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
+const textVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      damping: 20,
+    },
+  },
+};
+
+const hoverVariants = {
+  hover: {
+    scale: 1.05,
+    rotate: 1,
+    transition: { type: "spring", stiffness: 300, damping: 15 },
+  },
+};
+
 export default function About() {
   const { ref } = useSectionInView("About");
 
@@ -12,13 +33,18 @@ export default function About() {
     <motion.section
       ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      initial="hidden"
+      animate="visible"
+      transition={{ staggerChildren: 0.2, delayChildren: 0.175 }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      <motion.p
+        className="mb-3"
+        // variants={textVariants}
+        whileHover="hover"
+        variants={hoverVariants}
+      >
         As a <span className="font-medium">frontend developer</span>, I am
         driven by a deep passion for creating immersive and intuitive digital
         experiences. With 2.5 years of hands-on experience, I have honed my
@@ -37,7 +63,7 @@ export default function About() {
         open-source projects. As I continue to grow and evolve in this dynamic
         field, I am eager to tackle new challenges and make meaningful
         contributions to the ever-changing landscape of frontend development.{" "}
-      </p>
+      </motion.p>
     </motion.section>
   );
 }
