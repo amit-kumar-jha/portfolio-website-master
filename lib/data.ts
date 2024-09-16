@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import chatty from "@/public/chatty.png";
+import vericapDb from "@/public/vericapDb.png";
+import resumeBuilder from "@/public/resumeBuilder.png";
 
 export const links = [
   {
@@ -15,10 +15,10 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  // {
-  //   name: "Projects",
-  //   hash: "#projects",
-  // },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
   {
     name: "Skills",
     hash: "#skills",
@@ -54,25 +54,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Vericap",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a Frontend Engineer at Vericap, where I contributed to building tools and infrastructure that empower investors to source, screen, and manage carbon investments.",
+    tags: ["React", "TypeScript", "Next.js", "Material UI", "React Query"],
+    imageUrl: vericapDb,
   },
   {
-    title: "rmtDev",
+    title: "Chatty (Chat App)",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "This application provides real-time messaging capabilities with emoji support, user authentication, and more. It's built with Next.js, React, and several other modern libraries.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Pusher", "Next Auth"],
+    imageUrl: chatty,
   },
   {
-    title: "Word Analytics",
+    title: "Resume Builder",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app for creating Resume. It has number of templates and form to create a good ATS verified resume.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer", "ThreeJS"],
+    imageUrl: resumeBuilder,
   },
 ] as const;
 
@@ -92,4 +92,5 @@ export const skillsData = [
   "Material UI",
   "Bootstrap",
   "Framer Motion",
+  "ThreeJs",
 ] as const;
