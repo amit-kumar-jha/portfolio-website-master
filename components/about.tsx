@@ -47,7 +47,7 @@ export default function About() {
       >
         As a <span className="font-medium">frontend developer</span>, I am
         driven by a deep passion for creating immersive and intuitive digital
-        experiences. With 2.5 years of hands-on experience, I have honed my
+        experiences. With nearly 3 years of hands-on experience, I have honed my
         skills in crafting visually stunning and highly functional websites and
         applications. My journey in web development has been marked by a
         relentless pursuit of excellence, coupled with a commitment to staying

@@ -64,8 +64,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Amit.</span> I'm a{" "}
-        <span className="font-bold">frontend developer</span> with{" "}
-        <span className="font-bold">2.5 years</span> of experience. I thrive on
+        <span className="font-bold">frontend developer</span> with nearly{" "}
+        <span className="font-bold">3 years</span> of experience. I thrive on
         the creative process of crafting immersive
         <span className="italic">websites and applications</span>. My expertise
         lies primarily in React, with a strong emphasis on{" "}
@@ -95,7 +95,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Amit2024Cv.pdf"
+          href="/AMITKUMARJHA.pdf"
           download
         >
           Download CV{" "}
