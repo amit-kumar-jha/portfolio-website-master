@@ -35,10 +35,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-End Developer",
+    title: "ReactJS Developer",
     location: "Ahmedabad,Gujarat",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Engineered and refined intricate React components for extensive web applications, significantly enhancing user experience through intuitive designs.",
     icon: React.createElement(CgWorkAlt),
     date: "Nov,2021 - May,2023",
   },
@@ -46,9 +46,9 @@ export const experiencesData = [
     title: "Front-End Engineer",
     location: "Bengaluru, Karnataka",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Created and implemented visually striking and adaptive user interfaces through the extensive use of Material Ul components, streamlining design and component development processes.",
     icon: React.createElement(CgWorkAlt),
-    date: "May,2023 - Present",
+    date: "May,2023 - June,2024",
   },
 ] as const;
 
