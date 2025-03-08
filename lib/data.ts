@@ -35,12 +35,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "ReactJS Developer",
-    location: "Ahmedabad,Gujarat",
+    title: "Freelance Front-End Developer",
+    location: "Remote",
     description:
-      "Engineered and refined intricate React components for extensive web applications, significantly enhancing user experience through intuitive designs.",
+      "Designed and developed high-performance web applications using Next.js, React.js, and Tailwind CSS. Built interactive landing pages, dashboards, and portfolio websites with Framer Motion and Three.js. Implemented authentication flows with NextAuth, JWT, and OTP verification. Optimized website performance for SEO and user experience.",
     icon: React.createElement(CgWorkAlt),
-    date: "Nov,2021 - May,2023",
+    date: "July, 2023 - Present",
   },
   {
     title: "Front-End Engineer",
@@ -49,6 +49,14 @@ export const experiencesData = [
       "Created and implemented visually striking and adaptive user interfaces through the extensive use of Material Ul components, streamlining design and component development processes.",
     icon: React.createElement(CgWorkAlt),
     date: "May,2023 - June,2024",
+  },
+  {
+    title: "ReactJS Developer",
+    location: "Ahmedabad,Gujarat",
+    description:
+      "Engineered and refined intricate React components for extensive web applications, significantly enhancing user experience through intuitive designs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov,2021 - May,2023",
   },
 ] as const;
 
