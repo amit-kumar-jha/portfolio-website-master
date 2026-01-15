@@ -58,20 +58,25 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="font-bold">Hello, I'm Amit.</span> I'm a{" "}
-        <span className="font-bold">frontend developer</span> with nearly{" "}
-        <span className="font-bold">3 years</span> of experience. I thrive on
-        the creative process of crafting immersive
-        <span className="italic">websites and applications</span>. My expertise
-        lies primarily in React, with a strong emphasis on{" "}
-        <span className="underline">Next.js</span> for seamless,
-        high-performance web experiences.
-      </motion.h1>
+     <motion.h1
+  className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }}
+>
+  <span className="font-bold">Hello, I'm Amit.</span> I'm a{" "}
+  <span className="font-bold">Software Developer</span> with nearly{" "}
+  <span className="font-bold">4+ years</span> of experience. On the software
+  development side, I enjoy crafting immersive{" "}
+  <span className="italic">websites and applications</span> using{" "}
+  <span className="font-semibold">React</span> with a strong focus on{" "}
+  <span className="underline">Next.js</span> for high-performance web
+  experiences. I also build scalable CRM solutions using{" "}
+  <span className="font-semibold">
+    Lightning Web Components (LWC)
+  </span>{" "}
+  and Salesforce platform best practices.
+</motion.h1>
+
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
@@ -95,7 +100,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/AmitCv2025.pdf"
+          href="/AmitJha.pdf"
           download
         >
           Download CV{" "}

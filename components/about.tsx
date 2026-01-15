@@ -45,24 +45,25 @@ export default function About() {
         whileHover="hover"
         variants={hoverVariants}
       >
-        As a <span className="font-medium">frontend developer</span>, I am
-        driven by a deep passion for creating immersive and intuitive digital
-        experiences. With nearly 3 years of hands-on experience, I have honed my
-        skills in crafting visually stunning and highly functional websites and
-        applications. My journey in web development has been marked by a
-        relentless pursuit of excellence, coupled with a commitment to staying
-        updated with the latest industry trends and technologies. I thrive in
-        collaborative environments, where I can leverage my expertise in{" "}
-        <span className="font-medium">React.js</span> and{" "}
-        <span className="font-medium">Next.js</span> to bring creative ideas to
-        life. A strong believer in the power of clean code and responsive
-        design, I prioritize user experience above all else. My approach is
-        characterized by meticulous attention to detail and a constant drive for
-        improvement. Outside of coding, I enjoy exploring new design trends,
-        experimenting with innovative techniques, and contributing to
-        open-source projects. As I continue to grow and evolve in this dynamic
-        field, I am eager to tackle new challenges and make meaningful
-        contributions to the ever-changing landscape of frontend development.{" "}
+       As a <span className="font-medium">Software Developer</span>, I am driven by a deep
+passion for creating immersive, scalable, and intuitive digital experiences
+across modern web applications and CRM platforms. With nearly 4 years of
+hands-on experience, I have built visually compelling and highly functional
+solutions using modern frontend technologies along with the Salesforce
+platform. My journey in development has been shaped by a relentless pursuit of
+excellence and a strong commitment to staying current with evolving industry
+trends and best practices. I work extensively with <span className="font-medium">React.js</span> and{" "}
+<span className="font-medium">Next.js</span> to build high-performance web
+applications that emphasize clean code, reusable components, responsive design,
+and smooth user experiences. Alongside this, I develop scalable CRM solutions
+using <span className="font-medium">Lightning Web Components (LWC)</span>, Apex,
+and Salesforce platform features to support real-world business workflows and
+enterprise use cases. I thrive in collaborative environments where attention to detail,
+problem-solving, and continuous improvement are valued. Beyond coding, I enjoy
+exploring modern UI/UX patterns, learning platform-specific best practices, and
+building solutions that deliver real business impact. As I continue to grow in
+this dynamic field, I am eager to take on new challenges and contribute
+meaningfully across both web and Salesforce-driven ecosystems.
       </motion.p>
     </motion.section>
   );

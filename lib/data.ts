@@ -35,12 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Freelance Front-End Developer",
+    title: "Software Developer",
+    location: "Ahmedabad, Gujarat",
+    description:
+      "Worked as a Salesforce Developer focusing on Lightning Web Components (LWC) and enterprise UI development. Built reusable Salesforce components, integrated Apex controllers, and handled secure data communication using Lightning Data Service. Collaborated with teams to deliver scalable CRM solutions following Salesforce best practices.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May, 2025 - Present",
+  },
+  {
+    title: "Software Developer (Salesforce & Frontend) – Freelance",
     location: "Remote",
     description:
-      "Designed and developed high-performance web applications using Next.js, React.js, and Tailwind CSS. Built interactive landing pages, dashboards, and portfolio websites with Framer Motion and Three.js. Implemented authentication flows with NextAuth, JWT, and OTP verification. Optimized website performance for SEO and user experience.",
+      "Designed and developed high-performance web applications using Next.js, React.js, and Tailwind CSS. Built interactive landing pages, dashboards, and portfolio websites with Framer Motion and Three.js. Developed Salesforce Lightning Web Components (LWC) and implemented Apex controllers and SOQL queries. Worked with OmniStudio (OmniScripts, DataRaptors, Integration Procedures) for guided workflows. Implemented secure authentication using NextAuth, JWT, and OTP verification. Optimized performance, SEO, and API integrations. Provided technical consultation to improve product UI/UX and development workflows.",
     icon: React.createElement(CgWorkAlt),
-    date: "July, 2023 - Present",
+    date: "July, 2024 - April, 2025",
   },
   {
     title: "Front-End Engineer",
@@ -48,7 +56,7 @@ export const experiencesData = [
     description:
       "Created and implemented visually striking and adaptive user interfaces through the extensive use of Material Ul components, streamlining design and component development processes.",
     icon: React.createElement(CgWorkAlt),
-    date: "May,2023 - June,2024",
+    date: "May, 2023 - June, 2024",
   },
   {
     title: "ReactJS Developer",
@@ -56,7 +64,7 @@ export const experiencesData = [
     description:
       "Engineered and refined intricate React components for extensive web applications, significantly enhancing user experience through intuitive designs.",
     icon: React.createElement(CgWorkAlt),
-    date: "Nov,2021 - May,2023",
+    date: "Nov, 2021 - May, 2023",
   },
 ] as const;
 
@@ -82,6 +90,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer", "ThreeJS"],
     imageUrl: resumeBuilder,
   },
+
 ] as const;
 
 export const skillsData = [
@@ -92,6 +101,7 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "REST APIs",
   "Git",
   "Tailwind",
   "Redux",
@@ -100,5 +110,11 @@ export const skillsData = [
   "Material UI",
   "Bootstrap",
   "Framer Motion",
-  "ThreeJs",
+  "Three.js",
+  "Salesforce",
+  "Lightning Web Components (LWC)",
+  "Apex",
+  "SOQL",
+  "OmniStudio",
 ] as const;
+
