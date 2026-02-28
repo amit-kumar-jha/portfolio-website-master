@@ -91,14 +91,17 @@ export default function Experience() {
                     }`}
                 >
                   {/* Timeline dot */}
-                  <motion.div
-                    className="absolute left-1/2 z-20 top-8"
-                    style={{ x: "-50%" }}
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 200 }}
-                  >
+              <motion.div
+  className="absolute z-20 top-8"
+  style={{
+    left: isMobile ? 24 : "50%", // 24px = left-6
+    x: isMobile ? 0 : "-50%",
+  }}
+  initial={{ scale: 0 }}
+  whileInView={{ scale: 1 }}
+  viewport={{ once: true }}
+  transition={{ type: "spring", stiffness: 200 }}
+>
                     <div className="w-4 h-4 rounded-full bg-accent-gradient shadow-glow ring-4 ring-white/80 dark:ring-[#0a0a1a]/80" />
                   </motion.div>
 
