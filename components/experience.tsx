@@ -87,28 +87,30 @@ export default function Experience() {
               return (
                 <div
                   key={index}
-                  className={`relative flex items-start ${isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
-                    }`}
+                  className={`relative flex items-start ${
+                    isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
+                  }`}
                 >
                   {/* Timeline dot */}
-              <motion.div
-  className="absolute z-20 top-8"
-  style={{
-    left: isMobile ? 24 : "50%", // 24px = left-6
-    x: isMobile ? 0 : "-50%",
-  }}
-  initial={{ scale: 0 }}
-  whileInView={{ scale: 1 }}
-  viewport={{ once: true }}
-  transition={{ type: "spring", stiffness: 200 }}
->
+                  <motion.div
+                    className="absolute z-20 top-8"
+                    style={{
+                      left: isMobile ? 24 : "50%", // 24px = left-6
+                      x: isMobile ? 0 : "-50%",
+                    }}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                  >
                     <div className="w-4 h-4 rounded-full bg-accent-gradient shadow-glow ring-4 ring-white/80 dark:ring-[#0a0a1a]/80" />
                   </motion.div>
 
                   {/* Card */}
                   <motion.div
-                    className={`ml-14 sm:ml-0 sm:w-[47%] ${isLeft ? "sm:pr-10" : "sm:pl-10"
-                      }`}
+                    className={`ml-14 sm:ml-0 sm:w-[47%] ${
+                      isLeft ? "sm:pr-10" : "sm:pl-10"
+                    }`}
                     variants={cardVariants}
                     custom={isLeft}
                     initial="hidden"
