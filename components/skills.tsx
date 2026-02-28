@@ -6,18 +6,36 @@ import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
+/**
+ * Skills — Animated grid with glow effects and staggered entrance.
+ * Each skill pill has a gradient glow-border on hover.
+ */
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.04,
+    },
   },
-  animate: (index: number) => ({
+};
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    scale: 0.8,
+  },
+  visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
-      delay: 0.05 * index,
+      type: "spring",
+      damping: 20,
+      stiffness: 120,
     },
-  }),
+  },
 };
 
 export default function Skills() {
@@ -30,23 +48,23 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <motion.ul
+        className="flex flex-wrap justify-center gap-3 text-base"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="group relative glass rounded-xl px-5 py-3 text-gray-800 dark:text-white/80 cursor-default glow-border transition-all duration-300 hover:shadow-glow hover:scale-105 hover:-translate-y-0.5"
             key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
+            variants={itemVariants}
           >
             {skill}
           </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 }

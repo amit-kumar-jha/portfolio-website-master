@@ -4,13 +4,17 @@ import { useTheme } from "@/context/theme-context";
 import React from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
 
+/**
+ * ThemeSwitch — Glassmorphism floating toggle with smooth transition.
+ */
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <button
-      className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-lg flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950"
+      className="fixed bottom-5 right-5 glass w-[3rem] h-[3rem] rounded-full flex items-center justify-center hover:scale-110 active:scale-100 transition-all duration-300 hover:shadow-glow text-gray-700 dark:text-white/60"
       onClick={toggleTheme}
+      aria-label="Toggle theme"
     >
       {theme === "light" ? <BsSun /> : <BsMoon />}
     </button>
