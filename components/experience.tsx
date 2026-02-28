@@ -67,7 +67,7 @@ export default function Experience() {
 
         <div ref={containerRef} className="relative mt-10">
           {/* Animated timeline line */}
-          <div className="absolute left-6 sm:left-1/2 sm:-translate-x-[1.5px] top-0 bottom-0 w-[3px] rounded-full bg-gray-200/50 dark:bg-white/[0.06]">
+          <div className="absolute left-6 sm:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[3px] rounded-full bg-gray-200/50 dark:bg-white/[0.06]">
             <motion.div
               className="absolute top-0 left-0 w-full rounded-full"
               style={{
@@ -92,7 +92,8 @@ export default function Experience() {
                 >
                   {/* Timeline dot */}
                   <motion.div
-                    className="absolute left-6 sm:left-1/2 -translate-x-1/2 z-20 top-8"
+                    className="absolute left-1/2 z-20 top-8"
+                    style={{ x: "-50%" }}
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
@@ -161,6 +162,7 @@ export default function Experience() {
           {/* Timeline end cap */}
           <motion.div
             className="absolute -bottom-2 left-6 sm:left-1/2 -translate-x-1/2 z-20"
+            style={{ x: "-50%" }}
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}

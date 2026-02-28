@@ -211,25 +211,7 @@ export default function Intro() {
           </div>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-        >
-          <motion.div
-            className="w-6 h-10 rounded-full border-2 border-gray-400 dark:border-white/30 flex justify-center"
-            animate={{ y: [0, 5, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <motion.div
-              className="w-1.5 h-3 bg-accent-2 rounded-full mt-2"
-              animate={{ opacity: [0.3, 1, 0.3], y: [0, 8, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </motion.div>
-        </motion.div>
+
       </div>
     </section>
   );
