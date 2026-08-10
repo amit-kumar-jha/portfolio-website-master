@@ -1,48 +1,48 @@
 "use server";
 
-export const runtime = "nodejs";
-import React from "react";
 import { Resend } from "resend";
-import { validateString, getErrorMessage } from "@/lib/utils";
-import ContactFormEmail from "@/email/contact-form-email";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // simple server-side validation
-  if (!validateString(senderEmail, 500)) {
-    return {
-      error: "Invalid sender email",
-    };
+  if (!senderEmail || typeof senderEmail !== "string") {
+    return { error: "Invalid email address." };
   }
-  if (!validateString(message, 5000)) {
+
+  if (!message || typeof message !== "string") {
+    return { error: "Invalid message." };
+  }
+
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.warn("RESEND_API_KEY is missing in environment variables.");
     return {
-      error: "Invalid message",
+      error:
+        "Email service is currently offline. Please email directly at amitjha167@gmail.com",
     };
   }
 
-  let data;
   try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+    const resend = new Resend(apiKey);
+    const response = await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: "amitjha167@gmail.com",
-      subject: "Message from contact form",
-      reply_to: senderEmail,
-      react: React.createElement(ContactFormEmail, {
-        message: message,
-        senderEmail: senderEmail,
-      }),
+      subject: `Portfolio Contact from ${senderEmail}`,
+      replyTo: senderEmail,
+      text: `From: ${senderEmail}\n\n${message}`,
     });
-  } catch (error: unknown) {
+
+    if (response.error) {
+      console.error("Resend API error:", response.error);
+      return { error: response.error.message || "Failed to send email." };
+    }
+
+    return { success: true };
+  } catch (err: unknown) {
+    console.error("Server error sending email:", err);
     return {
-      error: getErrorMessage(error),
+      error: "Failed to send email. Please email directly at amitjha167@gmail.com",
     };
   }
-
-  return {
-    data,
-  };
 };

@@ -1,1 +1,0 @@
-export {default as PROFILE_ICON} from "./profileIcon.png"
